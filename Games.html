@@ -1,6 +1,6 @@
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="icon"
       href="https://www.ixl.com/dv3/jYg5YEjxG5lJfNjwW0r4Kw8lo5g/yui3/opengraph/assets/square_og_ixl.png"
@@ -8,9 +8,9 @@
     <title>Ixl</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
-  <body onload ="allowedsd()">
+  <body onload="allowedsd()">
     <div class="button-container">
-      <a href="indexi.html" class="button">Home</a>
+      <a href="index.html" class="button">Home</a>
       <button id="brave" class="button">Brave</button>
     </div>
     <div class="button-container">
@@ -26,7 +26,7 @@
     document.getElementById("brave").addEventListener("click", brave);
     function brave() {
       let yeah = document.cookie;
-      let star = localStorage.getItem("allows")
+      let star = localStorage.getItem("allows");
       if (yeah == "allo" || yeah == "al" || star == "safari") {
         window.location.href = "Brave.html";
       } else {
@@ -34,19 +34,26 @@
         if (pass == 7897) {
           document.cookie = "allo";
           window.location.href = "Brave.html";
-          localStorage.setItem("allows", "safari")
+          localStorage.setItem("allows", "safari");
         } else {
           alert("Wrong passcode");
         }
       }
     }
-    function allowedsd(){
-      let star = localStorage.getItem("allows")
+    function allowedsd() {
+      let star = localStorage.getItem("allows");
+      let starting = localStorage.getItem("alw");
       let yeah = document.cookie;
-      if (yeah == "allo" || yeah == "al" || star == "safari") {
-        console.log("unathorized acess redirected to index");
+      if (
+        yeah == "allos" ||
+        yeah == "al" ||
+        star == "safaris" ||
+        starting == "ysur"
+      ) {
+        console.log("allowed");
       } else {
-        window.location.href = "index.html"
+        console.log("unathorized acess redirected to index");
+        window.location.href = "index.html";
       }
     }
   </script>
