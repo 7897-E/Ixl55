@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://www.ixl.com/dv3/jYg5YEjxG5lJfNjwW0r4Kw8lo5g/yui3/opengraph/assets/square_og_ixl.png"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body onload="notallowed()">
+    <div onload="allowedsd()"><a href="bookmarklet.html" class="black">Back</a></div>
+  </body>
+  <script src="script.js"></script>
+</html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 10%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+        border-radius: 5px;
+      }
+
+      .active,
+      .collapsible:hover {
+        background-color: #555;
+      }
+
+      .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #333333;
+        width:80% 
+      }
+    </style>
+  </head>
+  <body onload="allowedsd()">
+    <button type="button" class="collapsible">Op blookhack</button>
+    <div class="content">
+      <div class="button-container">
+        <a href="OP.html" class="button">Copy</a>
+      </div>
+    </div>
+    <button type="button" class="collapsible">Blooket Money Hack</button>
+    <div class="content">
+      <div class="button-container">
+        <a href="MOney.html" class="button">Copy</a>
+      </div>
+    </div>
+    <button type="button" class="collapsible">Sell Dupe</button>
+    <div class="content">
+      <p>
+        javascript:let iframe = document.createElement('iframe');document.body.append(iframe);window.alert = iframe.contentWindow.alert.bind(window);window.confirm = iframe.contentWindow.confirm.bind(window);iframe.remove();var axios = Object.values(webpackJsonp.push([    [], {        ['']: (_, a, b) => {            a.cache = b.c        },    },    [        ['']    ],]).cache).find((x) => x.exports?.a?.get).exports.a;axios.get(%22/api/users%22).then(async%20({%20data:%20{%20name,%20unlocks%20}%20})%20=%3E%20{%20%20%20%20let%20blooks%20=%20Object.entries(unlocks).filter(x%20=%3E%20x[1]%20%3E%201);%20%20%20%20%20%20for%20(var%20[blook,%20amount]%20of%20blooks)%20await%20axios.put(%22/api/users/sellblook%22,%20{%20name,%20blook,%20numSold:%20amount%20-%201%20});%20%20%20%20%20%20alert(`Sold%20Blooks:%20\n${blooks.map(([blook,%20amount])%20=%3E%20`-%20${blook}%20${amount%20-%201}`).join(`\n`)}`);});
+      </p>
+    </div>
+    <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+    </script>
+  </body>
+</html>
