@@ -9,6 +9,7 @@ function links() {
     window.location.href = "Games.html";
   } else {
     let pass = prompt("Please enter password:", "");
+    //The number that equals the pass is the password change the numb to change the password if you want to do that you will have to do it on line 13, 29 and if you want you own developer pasword you will have to change the yuiasd3 on line 57 since that is the password.//
     if (pass == 78977897) {
       document.cookie = "allos";
       localStorage.setItem("allows", "safaris");
