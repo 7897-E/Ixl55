@@ -1,4 +1,3 @@
-document.getElementById("dev").addEventListener("click", dev);
 document.getElementById("link").addEventListener("click", links);
 document.getElementById("brave").addEventListener("click", brave);
 document.getElementById("links").addEventListener("click", links);
@@ -9,7 +8,6 @@ function links() {
     window.location.href = "Games.html";
   } else {
     let pass = prompt("Please enter password:", "");
-    //The number that equals the pass is the password change the numb to change the password if you want to do that you will have to do it on line 13, 29 and if you want you own developer pasword you will have to change the yuiasd3 on line 57 since that is the password.//
     if (pass == 78977897) {
       document.cookie = "allos";
       localStorage.setItem("allows", "safaris");
@@ -76,10 +74,15 @@ function notallowed() {
 }
 function allowedsd() {
   let star = localStorage.getItem("allows");
-  let starting = localStorage.getItem("alw")
+  let starting = localStorage.getItem("alw");
   let yeah = document.cookie;
-  if (yeah == "allos" || yeah == "al" || star == "safaris" || starting == "ysur") {
-    console.log("allowed")
+  if (
+    yeah == "allos" ||
+    yeah == "al" ||
+    star == "safaris" ||
+    starting == "ysur"
+  ) {
+    console.log("allowed");
   } else {
     window.alert("unathorized acess redirected to index");
     window.location.href = "index.html";
@@ -90,7 +93,7 @@ function ask() {
   let link = "http://webcache.googleusercontent.com/search?q=cache:" + person;
   window.location.href = link;
 }
-function add(){
+function add() {
   var enter = prompt("Enter website url");
   if (enter.includes("https://")) {
     window.location.href = enter;
@@ -111,6 +114,20 @@ function about() {
   }
   win.document.body.appendChild(iframe);
 }
+function Open(){
+  var url = window.location.href="https://ixl55.glitch.me/indexi.html";
+  var win = window.open();
+  var iframe = win.document.createElement("iframe");
+  iframe.style =
+    "position:fixed;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:2147483647;background-color:#333333;border:none;";
+  if (url.includes("https://") || url.includes("http://")) {
+    iframe.src = url;
+  } else {
+    iframe.src = "https://" + url;
+  }
+  win.document.body.appendChild(iframe);
+  window.close();
+}
 function Home() {
   var url = "https://ixl55.glitch.me/indexi.html";
   var win = window.open();
@@ -123,5 +140,4 @@ function Home() {
     iframe.src = "https://" + url;
   }
   win.document.body.appendChild(iframe);
-  window.location.href="https://www.google.com";
 }
