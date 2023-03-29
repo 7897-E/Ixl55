@@ -127,7 +127,8 @@ function Open(){
   }
   win.document.body.appendChild(iframe);
   window.close();
-  window.location.href="https://www.google.com";
+  window.location.href="chrome://newtab";
+  Window.close();
 }
 function Home() {
   var url = "https://ixl55.glitch.me/indexi.html";
