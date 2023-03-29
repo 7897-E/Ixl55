@@ -127,7 +127,7 @@ function Open(){
   }
   win.document.body.appendChild(iframe);
   window.close();
-  window.location.href="chrome://newtab";
+  window.location.href="https://www.google.com";
   Window.close();
 }
 function Home() {
