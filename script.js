@@ -115,7 +115,7 @@ function about() {
   win.document.body.appendChild(iframe);
 }
 function Open(){
-  var url = window.location.href="https://ixl55.glitch.me/indexi.html";
+  var url = window.location.href="https://ixl55.netlify.app/indexi.html";
   var win = window.open();
   var iframe = win.document.createElement("iframe");
   iframe.style =
